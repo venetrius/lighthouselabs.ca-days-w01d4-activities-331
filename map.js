@@ -36,3 +36,11 @@ map(words, function(word) {
 
 
 /* implementation */
+
+function map(array, func){
+  let result = [];
+  for (let val of array){
+    result.push(func(val));
+  }
+  return result;
+}
